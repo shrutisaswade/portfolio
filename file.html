@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Saswade - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #F4F4F2;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #05280e; /* Vibrant Green */
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #013220; /* Dark Green */
+            transform: translateY(-5px);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: 
+                url(https://img.freepik.com/premium-photo/abstract-geometry-skin-texture-background-modern-art-wall-murals-carpet-vogue_705737-1140.jpg) no-repeat center center, 
+                linear-gradient(135deg, #013220, #4C7556); /* Dark Green Gradient */
+            background-size: cover;
+            color: #fff;
+            border-bottom: 5px solid #4C7556;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .cta-buttons .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            color: #fff;
+            background: #4C7556; /* New button color */
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-buttons .btn:hover {
+            background: #013220; /* Dark Green */
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 50px 20px;
+            background-color: #fff;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #05280e;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            gap: 20px;
+        }
+
+        #skills ul li {
+            padding: 10px 20px;
+            background: #4C7556; /* Same vibrant green */
+            color: #fff;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        #skills ul li:hover {
+            background: #013220; /* Dark Green */
+            transform: scale(1.05);
+        }
+
+        .project {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            margin: 0 0 10px;
+            color: #05280e; /* Matching vibrant green */
+        }
+
+        .project a {
+            color: #05280e;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #4C7556;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        form button:hover {
+            background: #013220;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #05280e; /* Vibrant Green */
+        
+            color: #fff;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #013220;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="WhatsApp Image 2024-12-26 at 01.35.01_7e552ba8.jpg" alt="Shruti Saswade">
+        <h1>Shruti Saswade</h1>
+        <p>Computer Engineering Student | Web Developer | Creative Problem Solver</p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Who Am I?</h2>
+        <p>I am Shruti Saswade, a Computer Engineering student at VIT Pune with expertise in web development, blockchain, and machine learning. I am highly creative, calm under pressure, and passionate about designing innovative, user-friendly applications. With a strong work ethic and a knack for problem-solving, I aspire to contribute to cutting-edge projects and make a meaningful impact in the tech world.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills That Empower Me</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React.js, Node.js</li>
+            <li>Data Structures</li>
+            <li>MySQL</li>
+            <li>Flutter, Machine Learning</li>
+            <li>Python, Java, C</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="project">
+            <h3>Blackhole Stimulation</h3>
+            <p>Developed a 3D simulation of a black hole using the OpenGL Utility Toolkit (GLUT). The project showcases key features of black holes</p>
+            <p><strong>Tech Stack:</strong> Visual studio code , GLUT </p>
+            <a href="https://github.com/shrutisaswade/Crowdfunding-platform.git" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="project">
+            <h3>Plagrarism and AI Detector in Java GUI</h3>
+            <p>Developed a Java-based application with a graphical user interface (GUI) that detects plagiarism and AI-generated content. The tool analyzes text input to compare it against a database of existing sources and identifies potential matches or similarities. It also evaluates writing patterns to distinguish between human-written and AI-generated content. This project highlights my ability to integrate text analysis algorithms with a user-friendly interface, providing a useful tool for academic and content verification purposes.</p>
+            <p><strong>Tech Stack:</strong> Java, Swing, Apache Lucene  </p>
+            <a href="https://github.com/shrutisaswade/Crowdfunding-platform.git" target="_blank">GitHub Repo</a>
+        </div>
+        <div class="project">
+            <h3>Crowdfunding Platform Using Blockchain</h3>
+            <p>Developed a transparent payment platform using blockchain and Web3, ensuring secure and traceable transactions.</p>
+            <p><strong>Tech Stack:</strong> Blockchain, Web3 </p>
+            
+        </div>
+        <div class="project">
+            <h3>Quiz Application</h3>
+            <p>Built a responsive quiz app with dynamic questions and real-time scoring. Integrated Firebase for real-time database functionality.</p>
+            <p><strong>Tech Stack:</strong> Flutter, Firebase</p>
+            <a href="#">GitHub Repo</a>
+        </div>
+        <div class="project">
+            <h3>Enchanced Railway System</h3>
+            <p>The Enhanced Railway System integrates a mobile application for passengers to report emergencies like fire, medical issues, and safety hazards. Using IoT technology, the system connects to the nearest railway station for quick assistance and real-time monitoring, aiming to reduce response times and prevent incidents like suicides (using Iot sensors) on railways.</p>
+            <p><strong>Tech Stack:</strong>  IoT, Mobile App Development (Flutter), Firebase</p>
+            <a href="#">GitHub Repo</a>
+        </div>
+        <div class="project">
+            <h3>Underwater Debries Detection using Machine Learning</h3>
+            <p>The Underwater Debris Detection project leverages machine learning, specifically YOLO models, to identify debris in underwater environments. A dataset was created by capturing video data, converting it into images, and using these images for training the models. In addition, a hardware model was designed to support real-time debris detection. A website platform was developed to showcase the findings and facilitate data analysis. Various YOLO models (YOLO NAS, YOLOv5s, YOLOv6s, YOLOv8) were compared to optimize detection accuracy.</p>
+            <p><strong>Tech Stack:</strong> YOLO NAS, YOLOv8, Machine Learning, Web Development, Hardware Design</p>
+            <a href="#">GitHub Repo</a>
+        </div>
+        <div class="project">
+            <h3>Alziemer Predection and Detection using Machine Learning</h3>
+            <p>The Alzheimer’s Detection and Prediction project uses machine learning to predict the likelihood of an individual developing Alzheimer's disease. The model was trained on a dataset from Kaggle, containing medical data and features related to early Alzheimer’s symptoms. By analyzing patterns in the dataset, the model predicts the probability of Alzheimer’s onset. This tool aims to assist in early detection, enabling timely intervention and care.</p>
+            <p><strong>Tech Stack:</strong> Python, Machine Learning, Kaggle Dataset, Data Analysis</p>
+            <a href="#">GitHub Repo</a>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Let’s Work Together</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: shrutisaswade091@gmail.com</p>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shruti Saswade. All rights reserved.</p>
+    </footer>
+</body>
+</html>

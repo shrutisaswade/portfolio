@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Saswade - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #F4F4F2;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #05280e;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #013220;
+            transform: translateY(-5px);
+        }
+
+        .hero {
+            text-align: center;
+            background-color: rgb(201, 236, 250, 0.6);
+            padding: 120px 20px;
+            position: relative;
+            color: #fff;
+            border-bottom: 5px solid #4C7556;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            align: center;
+            position: relative;
+            z-index: 1;
+            width: 80%;
+            padding: 30px;
+            align-items: center;
+            z-index: 1;
+            background-color:rgba(135, 191, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .cta-buttons .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            color: #fff;
+            background: #4C7556;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-buttons .btn:hover {
+            background: #013220;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <iframe src="https://www.youtube.com/embed/azetZDoMF0E?autoplay=1&mute=1&loop=1&playlist=azetZDoMF0E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="hero-content">
+            <img src="WhatsApp Image 2024-12-26 at 01.35.01_7e552ba8.jpg" alt="Shruti Saswade">
+            <h1>Shruti Saswade</h1>
+            <p>Computer Engineering Student | Web Developer | Creative Problem Solver</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
